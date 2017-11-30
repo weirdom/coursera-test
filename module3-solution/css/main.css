@@ -46,6 +46,10 @@ p.navbar-brand {
   overflow:hidden;
 }
 
+#menuitems  li:hover {
+  background-color: #8ab2f2;
+}
+
 #menuitems  ul {
   border-left: 1px solid black;
   border-right: 1px solid black;
