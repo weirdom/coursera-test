@@ -52,8 +52,8 @@ function ShoppingListCheckOffService() {
   var service = this;
 
   // List of shopping items
-  var toBuyItems = ['Buy 10 cookies','Buy 10 cigars','Buy 5 bags of chips'];
-  var boughtItems = ['Buy 6 pack of beers'];
+  var toBuyItems = [{ name: "cookies", quantity: 99 },{ name: "cigars", quantity: 2 },{ name: "apples", quantity: 12 }];
+  var boughtItems = [];
 
 
   service.isBought = function (toBuyItemIdex) {
