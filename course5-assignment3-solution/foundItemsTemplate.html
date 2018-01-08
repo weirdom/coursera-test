@@ -1,10 +1,15 @@
 <div class="grid list" >
+	  <div class="row error">
+       <span ng-if="items.found.length==0">Nothing found</span>
+      </div>
 	  <div class="row" ng-repeat="item in items.found">
 			<div class="col-sm-3">{{ item.name }}</div> 
 			<div class="col-sm-3">{{ item.short_name }}</div> 
 			<div class="col-sm-3">{{ item.description }}</div>
 			<div class="col-sm-3"><button ng-click="items.onRemove({index: $index});">Don't want this one!</button></div>
 	  </div>
+
+	
 </div>
 	
 	
