@@ -1,0 +1,9 @@
+<div class="grid list" >
+	  <div class="row" ng-repeat="item in items.found">
+			<div class="col-sm-4">{{ item.name }}</div> 
+			<div class="col-sm-4">{{ item.description }}</div>
+			<div class="col-sm-4"><button ng-click="items.onRemove({index: $index});">Don't want this one!</button></div>
+	  </div>
+</div>
+	
+	

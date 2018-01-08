@@ -46,7 +46,7 @@
 		   <li ng-repeat="boughtItems in AlreadyBought.items"> Bought {{ boughtItems.quantity }} {{ boughtItems.name }}
 		   <button class="btn btn-default"  ng-click="AlreadyBought.isToBuy($index);"><span class="glyphicon glyphicon-ok"></span> To Buy </button>
 		   </li>
-		 </ul>
+		 </ul>
 		 <div ng-if="AlreadyBought.isEmpty()" class="emptyMessage">Nothing bought yet.</div>
 		</div>
 	  </div>
