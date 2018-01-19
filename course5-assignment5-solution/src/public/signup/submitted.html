@@ -1,0 +1,18 @@
+<span ng-if="!(submittedCtrl.submitInfo === undefined || submittedCtrl.submitInfo === null)">
+{{submittedCtrl.submitInfo.firstname}} 
+{{submittedCtrl.submitInfo.lastname}}
+{{submittedCtrl.submitInfo.phonenum}} <br>
+{{submittedCtrl.submitInfo.emailaddr}}<br>
+{{submittedCtrl.submitInfo.chooseItem.short_name}}<br>
+{{submittedCtrl.submitInfo.chooseItem.name}}<br>
+{{submittedCtrl.submitInfo.chooseItem.description}}<br>
+
+<img class="img-responsive" width="250" height="150" ng-src="https://www.davidchuschinabistro.com/images/{{submittedCtrl.submitInfo.chooseItem.short_name}}.jpg" alt="Chicken Corn Soup" src="https://www.davidchuschinabistro.com/images/{{submittedCtrl.submitInfo.chooseItem.short_name}}.jpg">
+
+</span>
+
+<span ng-if="(submittedCtrl.submitInfo === undefined || submittedCtrl.submitInfo === null)">
+
+Not Signed Up Yet. <a ui-sref="public.signup">Sign up Now!</a>
+
+</span>
